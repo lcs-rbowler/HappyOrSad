@@ -29,18 +29,19 @@ print("You said: \(input)")
 
 for individualCharacter in input
 {
-    if individualCharacter == "😃" || individualCharacter == "😄" || individualCharacter == "😊" || individualCharacter == "🙂"
-    {
-        happy += 1
-    }
-    else if individualCharacter == "😔" || individualCharacter == "😕" || individualCharacter == "🙁" || individualCharacter == "☹️"
-    {
-        sad += 1
-    }
     
-    //print(individualCharacter)
+    // Catagorize the character
+    switch individualCharacter {
+    case "😃", "😄", "😊", "🙂":
+        happy += 1
+    case "😔", "😕", "🙁", "☹️":
+        sad += 1
+    default:
+        break // Do nothing
+    }
 }
 
+// Output
 if happy > sad
 {
     print("happy")
