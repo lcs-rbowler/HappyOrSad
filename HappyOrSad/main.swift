@@ -29,7 +29,7 @@ print("You said: \(input)")
 
 for individualCharacter in input
 {
-    if individualCharacter == "😀" || individualCharacter == "😄" || individualCharacter == "😊" || individualCharacter == "🙂"
+    if individualCharacter == "😃" || individualCharacter == "😄" || individualCharacter == "😊" || individualCharacter == "🙂"
     {
         happy += 1
     }
@@ -38,22 +38,22 @@ for individualCharacter in input
         sad += 1
     }
     
-    print(individualCharacter)
+    //print(individualCharacter)
 }
 
 if happy > sad
 {
-    print("The message is happy.")
+    print("happy")
 }
 else if happy < sad
 {
-    print("The message is sad.")
+    print("sad")
 }
 else if happy == 0 && sad == 0
 {
-    print("None.")
+    print("none")
 }
 else if happy == sad
 {
-    print("Human emotion confuse robot. Beep boop.")
+    print("unsure")
 }
